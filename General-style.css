@@ -1,0 +1,50 @@
+P {
+    font-family: Lexend, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #00486D;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+}
+
+p1 {
+
+    font-family: Lexend, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #00486D;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+
+}
+
+p2 {
+    font-family: Lexend, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #00486D;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+p3 {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #00486D;
+}
