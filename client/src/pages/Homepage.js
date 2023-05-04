@@ -23,14 +23,14 @@ const Homepage = () => {
 
   return (
     <div>
-        <ul>
+        {/* <ul>
             {data.products.data.map(product => (
                 <li key={product.id}>
                   {product.attributes.product_name}
                 </li>
              ))}
         </ul>
-        Homepage
+        Homepage */}
 
     </div>
   )

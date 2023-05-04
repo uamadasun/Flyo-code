@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Category from './pages/Category';
 import SiteHeader from './components/SiteHeader';
+import "./index.css"
 
 function App() {
   return (
