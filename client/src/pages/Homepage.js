@@ -25,7 +25,9 @@ const Homepage = () => {
     <div>
         <ul>
             {data.products.data.map(product => (
-                <li key={product.id}>{product.attributes.product_name}</li>
+                <li key={product.id}>
+                  {product.attributes.product_name}
+                </li>
              ))}
         </ul>
         Homepage
