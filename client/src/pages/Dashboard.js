@@ -5,29 +5,28 @@ import { useAuthContext } from '../context/AuthContext'
 import { useNavigate } from 'react-router-dom'
 
 
+
 const Dashboard = () => {
     const logged = useContext(LoginContext)
     const {user} = useAuthContext();
     const navigate = useNavigate();
 
+    // Add validation for if a logged in user tries to manually access a dashboard with the wrong id as the parameter.
+
     useEffect(()=>{
-        if (logged === null || logged === undefined) {
-            navigate("/login", { replace: true })
+        if (user === undefined){
+            // console.log(user)
+            navigate(`/login`)
         }
     })
 
   return (
     <div>
         {user ? 
-
         <div>User {user.user.first_name}</div>
-
         :
         "why are you here"
-    
-        
         }
-
     </div>
     
     

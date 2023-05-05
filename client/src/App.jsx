@@ -16,11 +16,13 @@ export const LoginContext = createContext();
 function App() {
 
   const [logged, setLogged] = useState(null);
+  const {user} = useAuthContext();
+
+
 
   return (
     <LoginContext.Provider value={[logged, setLogged]}>
       <div className="App">
-
         <SiteHeader />
         <Routes>
           <Route exact path="/" element ={<Homepage/>} />

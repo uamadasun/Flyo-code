@@ -5,3 +5,7 @@
     position: relative;
     margin-top: 10%;
 }
+
+.login button {
+    background-color: #4DB7BE;
+}

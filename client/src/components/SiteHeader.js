@@ -16,15 +16,12 @@ export default function SiteHeader() {
 
   const handleLogout = () => {
     removeToken();
-    setUser(null)
-    setLogged(null)
+    setUser(undefined)
+    setLogged(undefined)
     navigate('/')
   }
 
-  useEffect(()=> {
-    console.log(user)
-    console.log(logged)
-  })
+  
 
   return (
     <div className="site-header head-container">
@@ -53,7 +50,8 @@ export default function SiteHeader() {
               />
             </button>
           </Link>
-          <button onClick={handleLogout}>Logout</button>
+          {logged ? <button onClick={handleLogout}>Logout</button> : <Link to='/login'>Login</Link> }
+          
           
         </account>
       </header>

@@ -15,13 +15,13 @@ const Registration = () => {
     const [error, setError] = useState("");
     const [logged, setLogged] = useContext(LoginContext)
 
-    const initialUser = {
-        username: "",
-        email:"",
-        password: "",
-        first_name:"",
-        last_name:""
-    }
+    // const [initialUser, setInitialUser] = useContext({
+    //     username: "",
+    //     email:"",
+    //     password: "",
+    //     first_name:"",
+    //     last_name:""
+    // })
 
     const handleInputChange = (e) => {
         setUser({
@@ -59,6 +59,7 @@ const Registration = () => {
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" onSubmit={onSubmitHandler}>
+            
             <div>
                 <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
                     Username
@@ -68,7 +69,7 @@ const Registration = () => {
                     id="username"
                     name="username"
                     type="username"
-                    autoComplete="username"
+                    // autoComplete="username"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     onChange={handleInputChange}
