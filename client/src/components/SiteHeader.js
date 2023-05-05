@@ -1,12 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import {useContext, useEffect} from "react";
+import { Link, useNavigate } from "react-router-dom";
 import  logo  from "../assets/logo&curve.svg"
 import userCircle from "../assets/User_cicrle_duotone_line.svg";
 import arrow from "../assets/Arrow.svg"
 import searchIcon from "../assets/Search-icon-1.svg"
 import "../SiteHeader.css"
+import { LoginContext } from "../App";
+import { useAuthContext } from "../context/AuthContext";
+import { removeToken } from "../helpers";
 
 export default function SiteHeader() {
+  const [logged, setLogged] = useContext(LoginContext)
+  const {user, setUser} = useAuthContext();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    removeToken();
+    setUser(null)
+    setLogged(null)
+    navigate('/')
+  }
+
+  useEffect(()=> {
+    console.log(user)
+    console.log(logged)
+  })
+
   return (
     <div className="site-header head-container">
       <header>
@@ -25,13 +44,17 @@ export default function SiteHeader() {
             <p className="traveler-button">Traveler</p>
           </button>
           
-          <button className="account-icon">
-            <img
-              className="account-photo"
-              src={userCircle}
-              alt='user profile default pic'
-            />
-          </button>
+          <Link to='/login'>
+            <button className="account-icon">
+              <img
+                className="account-photo"
+                src={userCircle}
+                alt='user profile default pic'
+              />
+            </button>
+          </Link>
+          <button onClick={handleLogout}>Logout</button>
+          
         </account>
       </header>
 

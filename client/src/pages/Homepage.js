@@ -1,8 +1,18 @@
-import React from 'react'
+import React, {useState, useContext} from 'react'
 import { gql, useQuery } from '@apollo/client';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuthContext } from '../context/AuthContext';
+import { setToken } from '../helpers';
+import axios from 'axios';
+import { LoginContext } from '../App';
 
 const Homepage = () => {
+
+  const navigate = useNavigate();
+    const {user, setUser} = useAuthContext();
+    // const [loading, setLoading] = useState(false);
+    // const [error, setError] = useState("");
+    const [logged, setLogged] = useContext(LoginContext)
 
     const {loading, error, data } = useQuery(gql`
         query GetProducts {
@@ -12,23 +22,17 @@ const Homepage = () => {
                 product_name
               }
             }
-            
           }
         }
         `);
 
     if (loading)  return "Loading...";
     if (error) return `Error! ${error.message}`;
-    console.log()
+    // console.log(`${logged}`)
 
   return (
     <div>
-        {/* <ul>
-            {data.products.data.map(product => (
-                <li key={product.id}>{product.attributes.product_name}</li>
-             ))}
-        </ul>
-        Homepage */}
+        <h1>You are home!</h1>
 
     </div>
   )
