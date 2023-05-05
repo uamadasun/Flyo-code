@@ -22,7 +22,10 @@ const Registration = () => {
     //     first_name:"",
     //     last_name:""
     // })
-
+    
+    // TO-DO: make errors an array of messages
+    //style errors
+    //logged in user should not be able to visit registration page
     const handleInputChange = (e) => {
         setUser({
             ...user,
