@@ -16,6 +16,7 @@ export default function SiteHeader() {
 
   const handleLogout = () => {
     removeToken();
+
     setUser(null);
     setLogged(null);
     navigate("/");
@@ -25,6 +26,13 @@ export default function SiteHeader() {
     // console.log(user)
     // console.log(logged)
   });
+  
+    setUser(undefined)
+    setLogged(undefined)
+    navigate('/')
+  }
+
+  
 
   return (
     <div className="site-header head-container bg-white">
@@ -52,6 +60,7 @@ export default function SiteHeader() {
               />
             </button>
           </Link>
+
           <button onClick={handleLogout}>Logout</button>
         </account> */}
 
@@ -216,6 +225,7 @@ export default function SiteHeader() {
           </div>
           <div className="navbar-end logout-button"></div>
         </div>
+
       </header>
 
       <searching>

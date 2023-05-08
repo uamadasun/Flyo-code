@@ -14,12 +14,24 @@ export const Login = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
     const [logged, setLogged] = useContext(LoginContext)
+    // TO-DO: figure out why logged in users can manually go to /login route and it logs them out.
 
+    const [initialUser, setInitialUser] = useState({
+        username: "",
+        password: "",
+    })
+
+    useEffect(()=>{
+        if (user !== undefined){
+            // console.log(user)
+            navigate(`/dashboard/${user.user.id}`)
+        }
+    })
     
 
     const handleInputChange = (e) => {
-        setUser({
-            ...user,
+        setInitialUser({
+            ...initialUser,
             [e.target.name]: e.target.value
         })
     }
@@ -27,7 +39,7 @@ export const Login = () => {
     const onSubmitHandler = async(e) => {
         e.preventDefault();
         setLoading(true);
-        axios.post(`http://localhost:1337/api/auth/local`, user)
+        axios.post(`http://localhost:1337/api/auth/local`, initialUser)
         .then(res => {
             setLogged(res.data)
             setUser(res.data)
@@ -54,6 +66,7 @@ export const Login = () => {
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" onSubmit={onSubmitHandler}>
+          {error ? error : ""}
             <div>
               <label htmlFor="identifier" className="block text-sm font-medium leading-6 text-gray-900">
                 Username
