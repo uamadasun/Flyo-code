@@ -34,10 +34,10 @@ export const Login = () => {
             navigate(`/dashboard/${res.data.user.id}`)
         })
         .catch(err => {
-            console.log(err.response)
-            console.log(`You've hit an error!`)
+            // console.log(err.response)
+            // console.log(`You've hit an error!`)
             setError(err.response.data.error.message)
-            console.log(err.response.data.error.message)
+            // console.log(err.response.data.error.message)
         })
         
     }
