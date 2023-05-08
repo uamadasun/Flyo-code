@@ -5,6 +5,7 @@ import { useAuthContext } from '../context/AuthContext';
 import { setToken } from '../helpers';
 import axios from 'axios';
 import { LoginContext } from '../App';
+import '../Homepage.css'
 
 const Homepage = () => {
 
@@ -31,7 +32,8 @@ const Homepage = () => {
     // console.log(`${logged}`)
 
   return (
-    <div>
+    <div className='bg-white big'>
+     
 
     </div>
   )

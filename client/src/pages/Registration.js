@@ -15,6 +15,17 @@ const Registration = () => {
     const [error, setError] = useState("");
     const [logged, setLogged] = useContext(LoginContext)
 
+
+    // const initialUser = {
+    //     username: "",
+    //     email:"",
+    //     password: "",
+    //     confirm_password: '',
+    //     first_name:"",
+    //     last_name:""
+    // }
+
+
     // const [initialUser, setInitialUser] = useContext({
     //     username: "",
     //     email:"",
@@ -26,6 +37,7 @@ const Registration = () => {
     // TO-DO: make errors an array of messages
     //style errors
     //logged in user should not be able to visit registration page
+
     const handleInputChange = (e) => {
         setUser({
             ...user,
@@ -35,19 +47,26 @@ const Registration = () => {
 
     const onSubmitHandler = async(e) => {
         e.preventDefault();
-        setLoading(true);
-        axios.post(`http://localhost:1337/api/auth/local/register`, user)
-        .then(res => {
-            setLogged(res.data)
-            setUser(res.data)
-            navigate(`/dashboard/${res.data.user.id}`)
-        })
-        .catch(err => {
-            console.log(err.response)
-            console.log(`You've hit an error!`)
-            setError(err.response.data.error.message)
-            console.log(err.response.data.error.message)
-        })
+        // console.log(e)
+        if (user.password === user.confirm_password){
+          setLoading(true);
+          axios.post(`http://localhost:1337/api/auth/local/register`, user)
+          .then(res => {
+              setLogged(res.data)
+              setUser(res.data)
+              navigate(`/dashboard/${res.data.user.id}`)
+          })
+          .catch(err => {
+              // console.log(err.response)
+              // console.log(`You've hit an error!`)
+              setError(err.response.data.error.message)
+              // console.log(err.response.data.error.message)
+          })
+        }
+        else{
+          setError("Passwords must match, try again!")
+        }
+        
         
     }
 
@@ -62,7 +81,11 @@ const Registration = () => {
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" onSubmit={onSubmitHandler}>
+
+            {error ? <p className="text-danger">{error}</p> : ""}
+
             
+
             <div>
                 <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
                     Username
@@ -90,30 +113,6 @@ const Registration = () => {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  onChange={handleInputChange}
-                />
-              </div>
-            </div>
-
-            <div>
-              <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
-                  Password
-                </label>
-                <div className="text-sm">
-                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                    Forgot password?
-                  </a>
-                </div>
-              </div>
-              <div className="mt-2">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
                   required
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={handleInputChange}
@@ -153,6 +152,56 @@ const Registration = () => {
                 />
               </div>
             </div>
+
+            <div>
+              <div className="flex items-center justify-between">
+                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                  Password
+                </label>
+                <div className="text-sm">
+                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    Forgot password?
+                  </a>
+                </div>
+              </div>
+              <div className="mt-2">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autoComplete="current-password"
+                  required
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  onChange={handleInputChange}
+                />
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center justify-between">
+                <label htmlFor="confirm_password" className="block text-sm font-medium leading-6 text-gray-900">
+                  Confirm Password
+                </label>
+                {/* <div className="text-sm">
+                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    Forgot password?
+                  </a>
+                </div> */}
+              </div>
+              <div className="mt-2">
+                <input
+                  id="confirm_password"
+                  name="confirm_password"
+                  type="password"
+                  autoComplete="confirm-password"
+                  required
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  onChange={handleInputChange}
+                />
+              </div>
+            </div>
+
+            
 
             <div>
               <button

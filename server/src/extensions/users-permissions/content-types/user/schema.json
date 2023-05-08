@@ -85,6 +85,11 @@
     "is_traveler": {
       "type": "boolean",
       "default": false
+    },
+    "confirm_password": {
+      "type": "password",
+      "private": true,
+      "required": true
     }
   }
 }
