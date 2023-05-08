@@ -27,10 +27,7 @@ export default function SiteHeader() {
     // console.log(logged)
   });
   
-    setUser(undefined)
-    setLogged(undefined)
-    navigate('/')
-  }
+ 
 
   
 
