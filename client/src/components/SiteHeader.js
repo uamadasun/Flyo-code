@@ -77,7 +77,7 @@ export default function SiteHeader() {
             
             </div>
             
-            <div className="dropdown navbar-end">
+            <div className="dropdown navbar-end ">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -97,18 +97,22 @@ export default function SiteHeader() {
 
               <ul
                 tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-auto"
+                className="dropdown-menu-options menu menu-compact dropdown-content mt-3 p-2 shadow bg-white bg-base-white-100 rounded-box w-auto"
               >
                 <li>
-                  <button className="btn buyeraccount">
-                    Buyer
+                <button className="buyeraccount">
+                    <p className="buyer-button">Buyer</p>
+                    
                   </button>
                 </li>
-                <button className=" btn traveleraccount">
-                  Traveler
-                </button>
+                <li>
+                <button className="traveleraccount">
+                    <p className="traveler-button">Traveler</p>
+                  </button>
+                </li>
+                
                 <li tabIndex={0}>
-                  <a className="testing justify-between">
+                  <a className="long-menu justify-between">
                     <button className="account-icon">
                       <img
                         className="account-photo"
@@ -119,7 +123,7 @@ export default function SiteHeader() {
                   </a>
 
                   {logged ? (
-                    <ul className="p-2">
+                    <ul className="p-2 account-options">
                       <li>
                         <a>Profile</a>
                       </li>
@@ -141,7 +145,7 @@ export default function SiteHeader() {
                       </li>
                     </ul>
                   ) : (
-                    <ul>
+                    <ul className="p2 account-options z-50 bg-white bg-base-white-100">
                       <li>
                         <Link to="/login">Login</Link>
                       </li>
