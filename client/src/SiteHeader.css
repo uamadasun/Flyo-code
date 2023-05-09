@@ -189,6 +189,22 @@ account ul {
     margin-left: 300px;
 }
 
+.dropdown ul{
+  /* width: fit-content; */
+  margin-left: -500;
+}
+
+li {
+  margin: 0 auto;
+  /* padding: 0 -155px; */
+  /* max-width: 50%; */
+  z-index: 300;
+}
+
+.account-options{
+  color: black;
+}
+
 
 .account-icon {
   display: flex;
