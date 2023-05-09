@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Oleo+Script&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.App{
+  box-sizing: border-box;
+  background-size: cover;
+    background-position: center;
+    object-position: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 158px;
+    margin: 0;
+    padding: 0;
+    font-family: Lexend, sans-serif;
+    background-color: white;
+}
+
+P {
+  font-family: Lexend, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #00486D;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 8.5px;
+  margin-bottom: 8.5px;
+}
+
+p1 {
+
+  font-family: Lexend, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #00486D;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 8.5px;
+  margin-bottom: 8.5px;
+
+}
+
+p2 {
+  font-family: Lexend, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #00486D;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 8.5px;
+  margin-bottom: 8.5px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+p3 {
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00486D;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 45px;
+  background: #4DB7BE;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  margin-left: 120px;
+  margin-right: 120px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  min-width: 540px;
+
+}
+
+.sort {
+  width: 1060px;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.left-nav {
+  flex: 1;
+}
+
+.right-nav {
+  flex: 1;
+}
