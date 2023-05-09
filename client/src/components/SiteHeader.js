@@ -2,12 +2,12 @@ import { useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo&curve.svg";
 import userCircle from "../assets/User_cicrle_duotone_line.svg";
-import arrow from "../assets/Arrow.svg";
-import searchIcon from "../assets/Search-icon-1.svg";
+
 import "../SiteHeader.css";
 import { LoginContext } from "../App";
 import { useAuthContext } from "../context/AuthContext";
 import { removeToken } from "../helpers";
+import SearchBar from "./SearchBar";
 
 export default function SiteHeader() {
   const [logged, setLogged] = useContext(LoginContext);
@@ -224,29 +224,9 @@ export default function SiteHeader() {
         </div>
 
       </header>
+      <SearchBar/>
 
-      <searching>
-        <div className="left-searching"></div>
 
-        <div className="countrybar">
-          <div className="shopat">
-            <p>Shop at</p>
-          </div>
-          <img className="arrow" src={arrow} alt="arrow" />
-          <div className="deliverto">
-            <p>Deliver to</p>
-          </div>
-
-          <button className="go">
-            <p className="go-p"> GO</p>
-          </button>
-        </div>
-
-        <div className="search">
-          <input className="search-bar" type="text" placeholder="Search" />
-          <img src={searchIcon} alt="search icon" />
-        </div>
-      </searching>
     </div>
   );
 }
