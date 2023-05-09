@@ -1,0 +1,77 @@
+.search-mobile {
+    /* flex: 1; */
+    padding-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 120px;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+    border: 2px solid red;
+  }
+
+  .search-bar-mobile {
+    border: 3px solid rgb(255, 254, 254);
+    border-radius: 25px;
+    width: 150px;
+    background-color: rgba(252, 252, 252, 0);
+    font-family: Lexend, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #ffffff;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition-duration: 0.3s;
+    text-align: start;
+  }
+
+  .search-mobile img {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    margin-left: -38px;
+    position: absolute;
+    vertical-align: bottom;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .search-mobile:hover img {
+    opacity: 0;
+  }
+
+  .search-bar-mobile::placeholder {
+    font-family: Lexend, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    /* identical to box height */
+    color: white;
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+  }
+
+  .search-bar-mobile:hover::placeholder {
+    opacity: 0.4;
+  }
+
+  input:hover {
+    width: 200px;
+    color: rgb(254, 255, 253);
+    border-color: rgba(215, 241, 161, 1);
+    text-align: left;
+    padding-left: 10px;
+    /* opacity: 30%; */
+  }
+
+  input:active {
+    width: 200px;
+    color: rgba(254, 255, 253, 0.358);
+  }

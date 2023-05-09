@@ -2,12 +2,14 @@ import { useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo&curve.svg";
 import userCircle from "../assets/User_cicrle_duotone_line.svg";
-
 import "../SiteHeader.css";
 import { LoginContext } from "../App";
 import { useAuthContext } from "../context/AuthContext";
 import { removeToken } from "../helpers";
 import SearchBar from "./SearchBar";
+import SearchBarMobile from "./SearchBarMobile";
+// import '../Homepage.css'
+
 
 export default function SiteHeader() {
   const [logged, setLogged] = useContext(LoginContext);
@@ -32,7 +34,7 @@ export default function SiteHeader() {
   
 
   return (
-    <div className="site-header head-container bg-white">
+    <div className="site-header head-container bg-white big">
       <header>
         {/* <Link to="/">
           <img src={logo} alt="logo for flyo" />
@@ -148,6 +150,10 @@ export default function SiteHeader() {
                       </li>
                     </ul>
                   )}
+                </li>
+
+                <li>
+                <SearchBarMobile/>
                 </li>
               
               </ul>
