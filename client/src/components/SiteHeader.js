@@ -75,9 +75,12 @@ export default function SiteHeader() {
             </Link>
             <h1 className="slogan"> Start your vacation shopping!</h1>
             
+            
             </div>
             
+            
             <div className="dropdown navbar-end ">
+              
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -234,6 +237,8 @@ export default function SiteHeader() {
         </div>
 
       </header>
+
+      
       <SearchBar/>
 
 

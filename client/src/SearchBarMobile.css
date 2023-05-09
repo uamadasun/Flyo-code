@@ -9,6 +9,7 @@
     align-items: center;
     /* justify-content: end; */
     /* border: 2px solid red; */
+    
   }
 
   .search-bar-mobile {
@@ -31,6 +32,7 @@
     margin-bottom: 0;
     transition-duration: 0.3s;
     text-align: start;
+    
   }
 
   .search-mobile img {
@@ -66,7 +68,7 @@
     opacity: 0.4;
   }
 
-  input:hover {
+  .search-bar-mobile input:hover {
     width: 150px;
     /* color: rgb(254, 255, 253); */
     color: black;

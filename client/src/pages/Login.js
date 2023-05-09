@@ -7,6 +7,9 @@ import { API } from '../constant';
 import { setToken } from '../helpers';
 import Registration from './Registration';
 import { useAuthContext } from '../context/AuthContext';
+import '../SiteHeader.css'
+import '../SearchBar.css'
+import '../SearchBarMobile.css'
 
 export const Login = () => {
     const navigate = useNavigate();
