@@ -198,4 +198,42 @@ searching {
     .search{
         visibility: hidden;
     }
+    searching {
+      height: 40px;
+    }
+
+    .shopat, .deliverto{
+      width: 80px;
+      height: 30px;
+      
+      margin-top: 0px;
+    }
+
+    .shopat p, .deliverto p{
+      font-size: 0.75rem;
+      
+      display: inline;
+      padding-top: 0;
+      
+    }
+
+    .deliverto{
+      height: 30px;
+      margin-top: 2px;
+      width: 90px;
+    }
+
+    .go {
+
+      height: 30px;
+      margin-top: 2px;
+      width: 70px;
+    }
+
+    .go-p {
+      margin-right: -10px;
+      text-align: center;
+      margin-top: 0;
+      font-size: 0.9rem;
+    }
   }
