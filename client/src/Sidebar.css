@@ -56,8 +56,57 @@ hr, .search-mobile{
     .sidebar button p{
         font-size: .75rem;
     }
-    .search-mobile{
-        display: none;
-    }
+    
 
 }
+
+@media (max-width:414px){
+    
+    .sidebar-svg {
+        margin: -15px -20px;
+        width: 30px;
+    }
+    /* figure out how to  make it move to the right more */
+    .x-button{
+        margin-top: -10px;
+        
+    }
+    
+
+}
+
+@media (max-width:280px){
+    
+    .sidebar-svg {
+        margin: -20px -35px;
+        width: 25px;
+    }
+    /* figure out how to  make it move to the right more */
+    .x-button{
+        margin: -20px -25px;
+        /* height: 10px; */
+        width: 15px;
+        
+    }
+
+    .sidebar li, .sidebar button p{
+        font-size: .6rem;
+        
+    }
+
+    .sidebar li, .sidebar button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sidebar button{
+        margin-left: -3px;
+        width: 60px;
+        height: 20px;
+    }
+
+    
+
+
+}
+

@@ -110,3 +110,61 @@
     }
 
 }
+
+@media (max-width:540px){
+    
+  
+  .search-mobile img {
+    margin-left: 90px;
+    
+  }
+}
+
+@media (max-width:414px){
+  
+  .search-bar-mobile{
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
+}
+  .search-mobile img {
+    margin-left: 75px;
+    height: 15px;
+    
+  }
+}
+
+@media (max-width:375px){
+  
+  .search-bar-mobile{
+
+    margin: 0 auto 0 -15px;
+}
+  .search-mobile img {
+    margin-left: 60px;
+
+    
+  }
+}
+
+@media (max-width:280px){
+  
+  .search-bar-mobile{
+
+    height: 15px;
+    width: 80px;
+    border: 2px solid #4db7be;
+    
+}
+
+.search-bar-mobile::placeholder{
+
+  font-size: 11px;
+  
+}
+  .search-mobile img {
+    width: 10px;
+    margin-left: 48px;
+
+  }
+}
