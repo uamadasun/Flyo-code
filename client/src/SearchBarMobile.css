@@ -15,7 +15,7 @@
     border: 3px solid #4db7be;
     border-radius: 25px;
     /* width: 150px; */
-    width: 100px;
+    width: 180px;
     background-color: rgba(252, 252, 252, 0);
     font-family: Lexend, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -38,7 +38,7 @@
     height: 18px;
     margin-right: 12px;
     /* margin-left: -38px; */
-    margin-left: 75px;
+    margin-left: 150px;
     position: absolute;
     vertical-align: bottom;
     opacity: 0.7;
@@ -67,7 +67,7 @@
   }
 
   input:hover {
-    width: 150px;
+    width: 180px;
     /* color: rgb(254, 255, 253); */
     color: black;
     border-color: rgba(215, 241, 161, 1);
@@ -77,6 +77,6 @@
   }
 
   input:active {
-    width: 200px;
+    /* width: 200px; */
     color: rgba(254, 255, 253, 0.358);
   }

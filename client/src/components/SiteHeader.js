@@ -9,7 +9,8 @@ import { removeToken } from "../helpers";
 import SearchBar from "./SearchBar";
 import SearchBarMobile from "./SearchBarMobile";
 // import '../Homepage.css'
-
+import Sidebar from "./Sidebar";
+import '../Sidebar.css'
 
 export default function SiteHeader() {
   const [logged, setLogged] = useContext(LoginContext);
@@ -28,10 +29,6 @@ export default function SiteHeader() {
     // console.log(user)
     // console.log(logged)
   });
-  
- 
-
-  
 
   return (
     <div className="site-header head-container bg-white big">
@@ -65,114 +62,23 @@ export default function SiteHeader() {
 
         <div className="navbar bg-base-0">
           <div className="navbar-start">
-          <Link to="/">
-              <img
-                src={logo}
-                alt="logo for flyo"
-                className="logo"
-                // className="btn logo btn-ghost"
-              />
+            <Link to="/">
+              <img src={logo} alt="logo for flyo" className="logo" />
             </Link>
             <h1 className="slogan"> Start your vacation shopping!</h1>
-            
-            </div>
-            
-            <div className="dropdown navbar-end ">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="black"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="3"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-
-              <ul
-                tabIndex={0}
-                className="dropdown-menu-options menu menu-compact dropdown-content mt-3 p-2 shadow bg-white bg-base-white-100 rounded-box w-auto"
-              >
-                <li>
-                <button className="buyeraccount">
-                    <p className="buyer-button">Buyer</p>
-                    
-                  </button>
-                </li>
-                <li>
-                <button className="traveleraccount">
-                    <p className="traveler-button">Traveler</p>
-                  </button>
-                </li>
-                
-                <li tabIndex={0}>
-                  <a className="long-menu justify-between">
-                    <button className="account-icon">
-                      <img
-                        className="account-photo"
-                        src={userCircle}
-                        alt="user profile default pic"
-                      />
-                    </button>
-                  </a>
-
-                  {logged ? (
-                    <ul className="p-2 account-options">
-                      <li>
-                        <a>Profile</a>
-                      </li>
-
-                      <li>
-                        <a>Request List</a>
-                      </li>
-
-                      <li>
-                        <a>Buying List</a>
-                      </li>
-
-                      <li>
-                        <a>Account Settings</a>
-                      </li>
-
-                      <li>
-                        <p onClick={handleLogout}>Logout</p>
-                      </li>
-                    </ul>
-                  ) : (
-                    <ul className="p2 account-options z-50 bg-white bg-base-white-100">
-                      <li>
-                        <Link to="/login">Login</Link>
-                      </li>
-                      <li>
-                        <Link to="/registration">Register</Link>
-                      </li>
-                    </ul>
-                  )}
-                </li>
-
-                <li>
-                <SearchBarMobile/>
-                </li>
-              
-              </ul>
           </div>
-
-
-
-
+          
+{/* MOBILE SIDEBAR HEADER NAVBAR OPTIONS*/}
+          <div className="flex flex-col items-center justify-center min-h-screen py-2">
+            <Sidebar />
+          </div>
+{/* COMPUTER HEADER NAVBAR OPTIONS */}
           <div className="navbar-center align hidden lg:flex ">
             <account>
               <ul className="menu menu-horizontal">
                 <li>
                   <button className="buyeraccount">
                     <p className="buyer-button">Buyer</p>
-                    
                   </button>
                 </li>
 
@@ -181,7 +87,6 @@ export default function SiteHeader() {
                     <p className="traveler-button">Traveler</p>
                   </button>
                 </li>
-                
 
                 <li tabIndex={0} className="long-menu bg-base-white">
                   <a className=" justify-around">
@@ -232,11 +137,8 @@ export default function SiteHeader() {
           </div>
           <div className="navbar-end logout-button"></div>
         </div>
-
       </header>
-      <SearchBar/>
-
-
+      <SearchBar />
     </div>
   );
 }
