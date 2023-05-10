@@ -11,7 +11,7 @@
   height: fit-content;
   /* background-color: white; */
   /* border: 2px solid green; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* .navbar{
@@ -72,11 +72,13 @@ header img {
   /* border: 2px solid brown; */
 }
 
+
+
 account ul {
   text-align: center;
   /* margin: 0 auto; */
-  /* margin-left: auto; */
-  /* margin-right: 0; */
+  margin-left: auto;
+  margin-right: -535px;
   
   /* justify-content: end; */
   /* border: 2px solid red; */
@@ -231,6 +233,16 @@ li {
 
 .account-icon:hover {
   box-shadow: 0px 0px 5px #00496d94;
+
+
+}
+
+@media (max-width:821px){
+  account{
+      visibility: hidden;
+      /* display: flex; */
+  }
+
 }
 
 @media (max-width: 636px){
