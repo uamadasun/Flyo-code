@@ -262,3 +262,48 @@ li {
     margin-top: 40px;
 }
 }
+
+@media(max-width: 414px){
+  /* .slogan{
+    font-size: 1rem;
+  } */
+
+  header {
+    height: 80px;
+    
+  }
+
+  .logo{
+    height: 95px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.slogan{
+  font-size: 0.8rem;
+}
+}
+
+@media(max-width: 280px){
+
+
+  header {
+    height: 70px;
+    
+  }
+
+  .logo{
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.slogan{
+  font-size: 0.6rem;
+  margin-left: 8px;
+}
+
+  
+
+  
+}

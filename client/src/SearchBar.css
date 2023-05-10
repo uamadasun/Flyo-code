@@ -237,3 +237,82 @@ searching {
       font-size: 0.9rem;
     }
   }
+
+  @media(max-width: 540px){
+
+    .countrybar{
+      margin-left: -11%;
+    }
+
+    
+  }
+
+  @media(max-width: 414px){
+
+    .countrybar{
+      margin-left: -33%;
+    }
+
+    .arrow{
+      width: 20px;
+    }
+
+    .go {
+
+      height: 30px;
+      margin-top: 2px;
+      width: 60px;
+    }
+
+    
+
+    .go-p {
+      margin-right: -15px;
+      text-align: center;
+      margin-top: 0;
+      font-size: 0.8rem;
+    }
+
+    
+  }
+
+  @media(max-width: 375px){
+
+    .countrybar{
+      margin-left: -38%;
+    }
+
+    
+  }
+
+  @media(max-width: 280px){
+
+    searching {
+      height: 35px;
+    }
+
+    .countrybar{
+      margin-left: -72.5%;
+      margin-top: -3px;
+    }
+
+    .arrow{
+      width: 15px;
+    }
+
+    .shopat, .deliverto{
+      height: 27px;
+      border:2.5px solid #4db7be; ;
+      
+      margin-top: 2px;
+    }
+    .go {
+
+      height: 27px;
+      width: 60px;
+    }
+
+
+
+    
+  }
