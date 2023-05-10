@@ -73,7 +73,7 @@ export default function SiteHeader() {
             <Sidebar />
           </div>
 {/* COMPUTER HEADER NAVBAR OPTIONS */}
-          <div className="navbar-center align flex">
+          <div className="navbar-end align flex">
             <account>
               <ul className="menu menu-horizontal">
                 <li>
@@ -135,7 +135,7 @@ export default function SiteHeader() {
               </ul>
             </account>
           </div>
-          <div className="navbar-end logout-button"></div>
+          {/* <div className="navbar-end logout-button"></div> */}
         </div>
       </header>
       <SearchBar />
