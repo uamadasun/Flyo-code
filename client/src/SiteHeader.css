@@ -8,8 +8,9 @@
   right: 0; 
   position: fixed;
   z-index: 0;
+  height: fit-content;
   /* background-color: white; */
-  /* border: 2px solid green; */
+  border: 2px solid green;
   box-sizing: border-box;
 }
 
@@ -23,12 +24,18 @@ header {
   height: 124px;
   max-width: 100%;
   margin-left: 6%;
+  /* margin-right: 10%; */
   margin-top: -14px;
   background: linear-gradient(90deg, #4db7be 24.32%, #ffffff 68.8%);
   border-radius: 70px;
   display: flex;
+  justify-content: end;
+  
   /* border: 2px solid yellow; */
+  /* padding: -; */
 }
+
+
 .logo{
     /* max-height: 70% !important;  */
     min-height: 70%;
@@ -61,6 +68,7 @@ header img {
   margin-top: 50px; */
   flex-shrink: 0;
   margin-left: 20px;
+  margin-right: 0;
   /* border: 2px solid brown; */
 }
 
@@ -68,7 +76,7 @@ account ul {
   text-align: center;
   /* margin: 0 auto; */
   /* margin-left: auto; */
-  /* margin-right: 120px; */
+  /* margin-right: 0; */
   
   /* justify-content: end; */
   /* border: 2px solid red; */
@@ -76,7 +84,9 @@ account ul {
   justify-content: start;
   height: 70px;
   align-content: start;
-  /* border: 2px solid red; */
+  border: 2px solid red;
+  padding-right: -20%;
+  /* right: 50; */
 
 }
 
@@ -222,3 +232,4 @@ li {
 .account-icon:hover {
   box-shadow: 0px 0px 5px #00496d94;
 }
+
