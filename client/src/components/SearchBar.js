@@ -24,7 +24,7 @@ const SearchBar = () => {
         </div>
 
         <div className="search ">
-          <input className="md:hidden lg:flex sm:hidden search-bar" type="text" placeholder="Search" />
+          <input className="md:flex lg:flex sm:flex search-bar" type="text" placeholder="Search" />
           <img src={searchIcon} alt="search icon" className="md:hidden lg:flex sm:hidden"/>
         </div>
       </searching>
