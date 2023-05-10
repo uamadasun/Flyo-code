@@ -73,7 +73,7 @@ export default function SiteHeader() {
             <Sidebar />
           </div>
 {/* COMPUTER HEADER NAVBAR OPTIONS */}
-          <div className="navbar-center align hidden lg:flex ">
+          <div className="navbar-center align flex">
             <account>
               <ul className="menu menu-horizontal">
                 <li>

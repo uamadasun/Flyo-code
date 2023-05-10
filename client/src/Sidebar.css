@@ -1,3 +1,4 @@
+
 .sidebar{
     z-index: 800;
     background-color: white;
@@ -6,6 +7,7 @@
 
 .sidebar-svg{
     display: none;
+    visibility: hidden;
 }
 
 .x-button{
@@ -37,6 +39,7 @@ hr, .search-mobile{
 
 @media (max-width:821px){
     .sidebar-svg{
+        visibility: visible;
         display: flex;
     }
 
@@ -47,5 +50,14 @@ hr, .search-mobile{
         display: flex;
     }
 
-}
+    .sidebar li{
+        font-size: .75rem;
+    }
+    .sidebar button p{
+        font-size: .75rem;
+    }
+    .search-mobile{
+        display: none;
+    }
 
+}

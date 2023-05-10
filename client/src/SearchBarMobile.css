@@ -80,3 +80,33 @@
     /* width: 200px; */
     color: rgba(254, 255, 253, 0.358);
   }
+
+  @media (max-width:636px){
+    
+    .search-bar-mobile{
+        width: 120px;
+        height: 30px;
+        margin: 0 auto;
+    }
+    .search-mobile img {
+      margin-left: 110px;
+      
+    }
+
+    .search-bar-mobile {
+      
+      font-size: 13px;
+      
+
+    }
+    .search-bar-mobile::placeholder {
+      
+      font-size: 13px;
+      /* line-height: 30px; */
+      /* identical to box height */
+      /* color: white; */
+      color: rgba(38, 34, 97, 1);
+
+    }
+
+}
