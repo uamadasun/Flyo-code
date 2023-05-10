@@ -1,0 +1,51 @@
+.sidebar{
+    z-index: 800;
+    background-color: white;
+
+}
+
+.sidebar-svg{
+    display: none;
+}
+
+.x-button{
+    z-index: 900;
+    color: black;
+}
+
+.sidebar li{
+    color: black;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 20px auto;
+    margin-left: -50px;
+}
+
+hr, .search-mobile{
+    margin-left: -50px;
+}
+
+.sidebar button{
+    margin: 20px auto;
+}
+.sidebar button p{
+    font-size: 1.15rem;
+}
+.search-mobile{
+    display: none;
+}
+
+@media (max-width:821px){
+    .sidebar-svg{
+        display: flex;
+    }
+
+}
+
+@media (max-width:636px){
+    .search-mobile{
+        display: flex;
+    }
+
+}
+
