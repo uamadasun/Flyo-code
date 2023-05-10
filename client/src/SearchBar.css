@@ -30,7 +30,7 @@ searching {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
   }
   
   .left-searching {
@@ -191,8 +191,11 @@ searching {
     .left-searching{
         visibility: hidden;
     }
+    
+  }
+
+  @media(max-width: 636px){
     .search{
         visibility: hidden;
     }
-    
   }

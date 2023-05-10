@@ -52,7 +52,7 @@ const Sidebar = () => {
           xmlns="http://www.w3.org/2000/svg" 
           className="sidebar-svg fixed z-30 flex items-center cursor-pointer right-10 top-6"
           fill="black"
-          viewBox="0 0 200 80"
+          viewBox="0 0 200 200"
           width="40"
           height="40"
           stroke-width="1.5" 
