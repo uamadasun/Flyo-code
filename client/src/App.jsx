@@ -25,7 +25,7 @@ function App() {
   return (
     <LoginContext.Provider value={[logged, setLogged]}>
       <div className="App">
-        <SiteHeader />
+        <SiteHeader>
         <Routes>
           <Route exact path="/" element ={<Homepage/>} />
           <Route path="category/:id"  element ={<Category/>} />
@@ -34,7 +34,7 @@ function App() {
           <Route path="dashboard/:id" element = {<Dashboard/>}/>
 
         </Routes>
-        
+        </SiteHeader>
       </div>
     </LoginContext.Provider>
   );
