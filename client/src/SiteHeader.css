@@ -10,7 +10,7 @@
   z-index: 0;
   height: fit-content;
   /* background-color: white; */
-  border: 2px solid green;
+  /* border: 2px solid green; */
   box-sizing: border-box;
 }
 
@@ -84,7 +84,7 @@ account ul {
   justify-content: start;
   height: 70px;
   align-content: start;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding-right: -20%;
   /* right: 50; */
 
@@ -233,3 +233,20 @@ li {
   box-shadow: 0px 0px 5px #00496d94;
 }
 
+@media (max-width: 636px){
+  .slogan{
+    font-size: 1rem;
+  }
+
+  header {
+    height: 100px;
+    max-width: 100%;
+    margin-left: 6%;
+    margin-top: -20px;
+  }
+
+  .logo{
+    height: 110px;
+    margin-top: 40px;
+}
+}

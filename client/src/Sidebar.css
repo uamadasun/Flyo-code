@@ -15,7 +15,7 @@
 
 .sidebar li{
     color: black;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 700;
     margin: 20px auto;
     margin-left: -50px;
@@ -29,7 +29,7 @@ hr, .search-mobile{
     margin: 20px auto;
 }
 .sidebar button p{
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 .search-mobile{
     display: none;
