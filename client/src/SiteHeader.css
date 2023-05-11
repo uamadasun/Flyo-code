@@ -197,14 +197,6 @@ account ul {
 
 }
 
-.dropdown{
-    margin-left: 300px;
-}
-
-.dropdown ul{
-  /* width: fit-content; */
-  margin-left: -500;
-}
 
 li {
   margin: 0 auto;
