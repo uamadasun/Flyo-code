@@ -79,8 +79,8 @@ const Registration = () => {
           </h2>
         </div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" onSubmit={onSubmitHandler}>
+        <div className="mt-3 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form className="space-y-4" onSubmit={onSubmitHandler}>
 
             {error ? <p className="text-danger">{error}</p> : ""}
 
@@ -159,7 +159,7 @@ const Registration = () => {
                   Password
                 </label>
                 <div className="text-sm">
-                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  <a href="#" className="font-semibold text-blue-900 hover:text-sky-700">
                     Forgot password?
                   </a>
                 </div>

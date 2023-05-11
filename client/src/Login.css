@@ -3,9 +3,9 @@
     width: 75%;
     max-height: fit-content;
     /* position: relative; */
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     /* border: 1px solid red; */
-    margin: 150px auto;
+    margin: 150px auto 50px auto;
     padding: 0;
     
 }
@@ -14,3 +14,14 @@
     background-color: #4DB7BE;
 }
 
+@media (max-width:636px){
+    .login{
+        margin: 90px auto 50px;
+    }
+}
+
+@media (max-width:414px){
+    .login{
+        margin: 60px auto 50px;
+    }
+}
