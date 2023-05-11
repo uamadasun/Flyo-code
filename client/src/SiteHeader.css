@@ -210,7 +210,8 @@ li {
   margin: 0 auto;
   /* padding: 0 -155px; */
   /* max-width: 50%; */
-  z-index: 300;
+  z-index: 1;
+  /* border: 2px solid red; */
 }
 
 .account-options{
@@ -307,3 +308,7 @@ li {
 
   
 }
+
+/* .navbar{
+  max-height: fit-content !important;
+} */

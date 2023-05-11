@@ -31,7 +31,7 @@ export default function SiteHeader() {
   });
 
   return (
-    <div className="site-header head-container bg-white big">
+    <div className="site-header head-container">
       <header>
         {/* <Link to="/">
           <img src={logo} alt="logo for flyo" />

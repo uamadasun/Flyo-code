@@ -1,12 +1,16 @@
 .login{
     /* border: 5px solid red; */
-    width: 100%;
-    height: 100%;
-    position: relative;
-    margin-top: 10%;
+    width: 75%;
+    max-height: fit-content;
+    /* position: relative; */
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+    margin: 150px auto;
+    padding: 0;
     
 }
 
 .login button {
     background-color: #4DB7BE;
 }
+
