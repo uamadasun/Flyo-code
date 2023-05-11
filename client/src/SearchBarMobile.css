@@ -15,7 +15,7 @@
     border: 3px solid #4db7be;
     border-radius: 25px;
     /* width: 150px; */
-    width: 180px;
+    max-width: 180px;
     background-color: rgba(252, 252, 252, 0);
     font-family: Lexend, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -29,7 +29,7 @@
     padding-left: 10px;
     margin-top: 0;
     margin-bottom: 0;
-    transition-duration: 0.3s;
+    /* transition-duration: 0.3s; */
     text-align: start;
   }
 
@@ -67,17 +67,18 @@
   }
 
   input:hover {
-    width: 180px;
+    /* min-width: 140%; */
+    max-width: 140%;
     /* color: rgb(254, 255, 253); */
     color: black;
-    border-color: rgba(215, 241, 161, 1);
-    text-align: left;
-    padding-left: 10px;
+    /* border-color: rgba(215, 241, 161, 1); */
+    /* text-align: left; */
+    /* padding-left: 10px; */
     /* opacity: 30%; */
   }
 
   input:active {
-    /* width: 200px; */
+    /* width: 16px; */
     color: rgba(254, 255, 253, 0.358);
   }
 
